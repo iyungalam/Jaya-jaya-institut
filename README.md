@@ -44,7 +44,7 @@ https://lookerstudio.google.com/reporting/e7dee503-a8e1-4e15-a03b-3b37c3edc792
 
 Prediksi untuk model machine learning dibuat dengan menggunakan Streamlit. Prediksi dapat diakses pada link berikut ini:
 ```
-https://lookerstudio.google.com/reporting/e6097218-26aa-4923-b213-27dd7aa18fb7
+https://jaya-jaya-institut-iipqyfahiv3fmgtwfyjue3.streamlit.app/
 
 ```
 
