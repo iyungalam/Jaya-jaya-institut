@@ -21,13 +21,19 @@ Berdasarkan cakupan proyek tersebut, kita membutuhkan beberapa resource dan tool
 4.berbagai library pendukung untuk pengolahan data dan pengembangan model machine learning.
 
 ### Persiapan
+Kumpulan data yang dibuat dari lembaga pendidikan tinggi (diperoleh dari beberapa basis data terpisah) yang terkait dengan mahasiswa yang terdaftar dalam berbagai gelar sarjana, seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Kumpulan data tersebut mencakup informasi yang diketahui pada saat pendaftaran mahasiswa (jalur akademik, demografi, dan faktor sosial ekonomi) dan kinerja akademik mahasiswa pada akhir semester pertama dan kedua. Data tersebut digunakan untuk membangun model klasifikasi guna memprediksi putus sekolah dan keberhasilan akademik mahasiswa.
 
-Sumber data: https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/refs/heads/main/students_performance/data.csv
+Sumber data di akses melalui: https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/refs/heads/main/students_performance/data.csv
 
 Setup environment:
 
 ```
-pip install numpy pandas matplotlib seaborn scikit-learn==1.2.2 joblib==1.4.2 streamlit==1.24.1
+conda create --name Submission_JayaInstitut python=3.12.3
+conda activate Submission_JayaInstitut
+pip install -r requirements.txt
+
+disini saya menginstall requirements.txt di collab dengan code sebagai berikut:
+!pip freeze > requirements.txt
 ```
 
 ## Business Dashboard
@@ -38,7 +44,7 @@ displaced, and tuition
 
 Dashboard dibuat dengan menggunakan Google Looker Studio. Dashboard dapat diakses pada link berikut ini:
 ```
-https://lookerstudio.google.com/reporting/e7dee503-a8e1-4e15-a03b-3b37c3edc792
+https://lookerstudio.google.com/reporting/213d2435-d384-4bc1-b80c-6605787aa069
 
 ```
 
@@ -47,7 +53,18 @@ Prediksi untuk model machine learning dibuat dengan menggunakan Streamlit. Predi
 https://jaya-jaya-institut-iipqyfahiv3fmgtwfyjue3.streamlit.app/
 
 ```
+### Menjalan sistem Machine Learning di local:
+Berikut adalah alur atau tata cara menejalankan sistem machine learning di local:
 
+1. Buka terminal atau PowerShell
+2. Aktifkan virtual environment yang telah dibuat sebelumnya
+3. Masuk ke lokasi dimana file streamlit (app.py) berada
+4. Jalankan file streamlit dengan perintah berikut ini:
+
+```
+streamlit run app.py
+
+```
 
 ## Conclusion
 
